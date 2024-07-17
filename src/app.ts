@@ -14,6 +14,9 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use('/api/v1', routes);
+app.get('/',(req,res)=>{
+  res.send("Server started Successfully")
+})
 
 app.use(globalExceptionHandler);
 
