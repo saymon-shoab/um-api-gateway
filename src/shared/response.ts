@@ -1,8 +1,8 @@
 import { Response } from 'express';
 
 interface IResponse {
-  success: boolean;
-  statusCode: number;
+  success?: boolean;
+  statusCode?: number;
   message?: string;
   meta?: {
     page: number;
